@@ -26,6 +26,10 @@ const Header = () => {
     window.addEventListener("resize", ResponsiveMenu);
   }, []);
 
+  const divStyle = {
+    fontWeight: "bold",
+  };
+
   return (
     <div className="w-full h-20 bg-white sticky top-0 z-50 border-b-[1px] border-b-gray-200">
       <nav className="h-full px-4 max-w-container mx-auto relative">
@@ -70,11 +74,7 @@ const Header = () => {
                   className="w-[80%] h-full relative"
                 >
                   <div className="w-full h-full bg-primeColor p-6">
-                    <img
-                      className="w-28 mb-6"
-                      src={logoLight}
-                      alt="logoLight"
-                    />
+                    <h1 style={divStyle}>Ecommerce</h1>
                     <ul className="text-gray-200 flex flex-col gap-2">
                       {navBarList.map((item) => (
                         <li
